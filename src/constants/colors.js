@@ -1,2 +1,5 @@
 export const red = "red"
 export const gray = "gray"
+export const green = "#00A202"
+export const blue = "blue"
+export const black = "#303030"
