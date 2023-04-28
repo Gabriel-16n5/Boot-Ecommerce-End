@@ -87,9 +87,9 @@ export default function CartPage() {
                     </span>
                 </div>
             </FinalizeOrderData>
-                <button type="submit">Finalize Order</button>
-                </form>
-            </FinalizeOrder>
+            <button type="submit">Finalize Order</button>
+            </form>
+        </FinalizeOrder>
       </CartContainer>
     </PageContainer>
     )
