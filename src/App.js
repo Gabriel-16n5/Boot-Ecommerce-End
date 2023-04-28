@@ -32,5 +32,4 @@ const PagesContainer = styled.main`
   /* background-color:  ${gray}; */
   width: calc(100vw - 50px);
   max-height: 100vh;
-  padding: 25px;
 `
