@@ -8,8 +8,8 @@ import { gray } from "./constants/colors"
 import AuthContext from "./contexts/AuthContext"
 
 export default function App() {
-  const [token, setToken] = useState(localStorage.getItem())
-  const [userName, setUserName] = useState(localStorage.getItem())
+  //const [token, setToken] = useState(localStorage.getItem())
+  //const [userName, setUserName] = useState(localStorage.getItem())
 
   return (
     <PagesContainer>
@@ -30,5 +30,5 @@ const PagesContainer = styled.main`
   background-color:  ${gray};
   width: calc(100vw - 50px);
   max-height: 100vh;
-  padding: 25px;
+ 
 `
