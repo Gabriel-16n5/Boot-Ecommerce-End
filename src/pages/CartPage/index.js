@@ -12,6 +12,7 @@ export default function CartPage() {
     return (
     <PageContainer>
       <CartContainer>
+        <h1>MEU CARRINHO</h1>
         <ResumeContainer>
             <div>
                 <><h2>Resumo</h2></>

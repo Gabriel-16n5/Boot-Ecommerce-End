@@ -1,7 +1,16 @@
 import styled from "styled-components"
 import {gray, green} from "../../constants/colors"
 export const CartContainer = styled.main`
-      padding: 25px;
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
 `
 
 export const ResumeContainer = styled.section`
