@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {blue, gray, green} from "../../constants/colors"
+import {gray, green} from "../../constants/colors"
 export const CartContainer = styled.main`
       padding: 25px;
 `
@@ -9,10 +9,65 @@ export const ResumeContainer = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 20px;
     div {
         background-color: #424242;
     }
+    h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 20px;
+        color: red;
+        background-color: #424242;
+    }
     p {
+        margin-left: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: ${green};
+        background-color: #424242;
+    }
+    h3 {
+        margin-left: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+        background-color: #424242;
+    }
+    h5 {
+        margin-left: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 20px;
+        color: ${green};
+        background-color: #424242;
+    }
+    h4 {
         margin-left: 10px;
         margin-top: 10px;
         display: flex;
@@ -26,59 +81,26 @@ export const ResumeContainer = styled.section`
         color: #FFFFFF;
         background-color: #424242;
     }
-    h3 {
-        margin-left: 10px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
-        color: #FFFFFF;
-        background-color: #424242;
-    }
-    h4 {
-        margin-left: 10px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        color: #FFFFFF;
-        background-color: #424242;
-    }
-    img {
-        margin-left: 10px;
-        margin-right: 20px;
-        width: 120px;
-        height: 120px;
-    }
     span {
     display:flex;
     justify-content: space-around;
     background-color: #424242;
     align-items: center;
     width: 90vw;
-    height: 50vw;
+    height: 30vw;
     }
     h2 {
         margin-left: 10px;
+        margin-top: 15px;
         width: 90vw;
         height: 10vw;
         background-color: #424242;
         display:flex;
-        justify-content: start;
+        justify-content: center;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 44px;
         line-height: 32px;
         align-items: center;
         text-align: center;

@@ -16,17 +16,23 @@ export default function CartPage() {
             <div>
                 <><h2>Resumo</h2></>
                 <span>
-                    <span>
                         <div>
-                            <p>Subtotal</p>
-                            <p>Total</p>
+                            <h3>Subtotal</h3>
+                            <h4>Total</h4>
                         </div>
                         <div>
-                            <p>R$ 82,24</p>
-                            <p>R$ 82,24</p>
+                            <h3>R$82,24</h3>
+                            <h4>R$82,24</h4>
                         </div>
-                    </span>
                 </span> 
+                <div>
+                    <p>á vista</p>
+                    <h5>R$69,90</h5>
+                    <h3>no PIX com 15% desconto</h3>
+                    <h2>-</h2>
+                    <h1>R$82,24</h1>
+                    <h3>em até 6x de<h1>13,71</h1> sem juros no cartão</h3>
+                </div>
             </div>
         </ResumeContainer>
         <CartProducts>
@@ -34,7 +40,7 @@ export default function CartPage() {
                    <><h2>Products</h2></> 
                     <span>
                         <div>
-                            <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-rds-bk011.jpg"/>
+                            <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/g/pg-rds-bk011.jpg" alt="placeHolder"/>
                             <p>- 1 +</p>
                         </div>
                         <div>
@@ -81,9 +87,9 @@ export default function CartPage() {
                     </span>
                 </div>
             </FinalizeOrderData>
-            <button type="submit">Finalize Order</button>
-            </form>
-        </FinalizeOrder>
+                <button type="submit">Finalize Order</button>
+                </form>
+            </FinalizeOrder>
       </CartContainer>
     </PageContainer>
     )
@@ -93,5 +99,4 @@ export default function CartPage() {
   /* background-color:  "gray"; */
   width: calc(100vw - 50px);
   max-height: 100vh;
-  padding: 25px;
 `
