@@ -2,6 +2,7 @@ import { CartContainer, CartProducts, FinalizeOrder, FinalizeOrderData, ResumeCo
 import Forms from "../../hooks/Forms"
 import styled from "styled-components"
 import Footer from "../Footer/index"
+import Navbar from "../Navbar/index"
 export default function CartPage() {
     const { form, formHandler } = Forms({ cupon: "", shipping: "" })
   
@@ -12,6 +13,7 @@ export default function CartPage() {
   
     return (
     <PageContainer>
+        <Navbar/>
       <CartContainer>
         <h1>MEU CARRINHO</h1>
         <ResumeContainer>
