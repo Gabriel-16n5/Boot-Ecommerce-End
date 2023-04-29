@@ -1,6 +1,7 @@
 import { CartContainer, CartProducts, FinalizeOrder, FinalizeOrderData, ResumeContainer } from "./styled";
 import Forms from "../../hooks/Forms"
 import styled from "styled-components"
+import Footer from "../Footer/index"
 export default function CartPage() {
     const { form, formHandler } = Forms({ cupon: "", shipping: "" })
   
@@ -92,6 +93,7 @@ export default function CartPage() {
             </form>
         </FinalizeOrder>
       </CartContainer>
+      <Footer/>
     </PageContainer>
     )
   }
