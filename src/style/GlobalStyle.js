@@ -6,7 +6,13 @@ const GlobalStyle = createGlobalStyle`
         box-sizing:border-box;
         padding-left:0px;
     }
-   
+    
+    @font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
     * {
         // we need define a default settings
     }
