@@ -9,8 +9,8 @@ import AuthContext from "./contexts/AuthContext"
 import CartPage from "./pages/CartPage"
 
 export default function App() {
-  // const [token, setToken] = useState(localStorage.getItem())
-  // const [userName, setUserName] = useState(localStorage.getItem())
+  //const [token, setToken] = useState(localStorage.getItem())
+  //const [userName, setUserName] = useState(localStorage.getItem())
 
   return (
     <PagesContainer>
@@ -29,7 +29,8 @@ export default function App() {
 }
 
 const PagesContainer = styled.main`
-  /* background-color:  ${gray}; */
-  width: calc(100vw - 50px);
-  max-height: 100vh;
+  background-color:  ${gray};
+  width: 100%;
+  max-height: 100%;
+ 
 `

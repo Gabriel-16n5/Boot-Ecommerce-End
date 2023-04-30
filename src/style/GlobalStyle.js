@@ -2,6 +2,17 @@ import { createGlobalStyle } from "styled-components";
 import { red, gray, blue, black } from "../constants/colors";
 
 const GlobalStyle = createGlobalStyle`
+    body{
+        box-sizing:border-box;
+        padding-left:0px;
+    }
+    
+    @font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
     * {
         font-family: 'Roboto';
         font-style: normal;
