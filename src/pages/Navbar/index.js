@@ -1,45 +1,28 @@
-import { CartContainer, CartProducts, FinalizeOrder, FinalizeOrderData, ResumeContainer } from "./styled";
-import Forms from "../../hooks/Forms"
-import styled from "styled-components"
-export default function CartPage() {
-    const { form, formHandler } = Forms({ cupon: "", shipping: "" })
-  
-    function submitForm(e) {
-      e.preventDefault()
-      console.log(form)
-    }
-  
-    return (
-    <PageContainer>
-      <CartContainer>
-        <FinalizeOrder>
-            <form onSubmit={submitForm}>
-            <FinalizeOrderData>
-                <div>
-                    <div><h5>Discount coupons</h5></div>
-                    <span>
-                        <input
-                            required
-                            type="cupon"
-                            placeholder="Cupon"
-                            name="cupon"
-                            value={form.cupon}
-                            onChange={formHandler}
-                        />
-                        <button>Apply</button>
-                    </span>
-                 </div>
-            </FinalizeOrderData>
-            <button type="submit">Finalize Order</button>
-            </form>
-        </FinalizeOrder>
-      </CartContainer>
-    </PageContainer>
-    )
-  }
+import React from "react";
+import {NavbarContainer, Logo, NavbarLinks, NavbarLink,ProductsContainer, StyledInput, SearchIcon, Menu} from "./styled"
+import { AiTwotoneHeart } from "react-icons/ai";
+import {MdDarkMode, MdShoppingCart} from "react-icons/md"
 
-  const PageContainer = styled.main`
-  /* background-color:  "gray"; */
-  width: calc(100vw - 50px);
-  max-height: 100vh;
-`
+const Navbar = () => {
+  return (
+    <>
+    <NavbarContainer>
+      <h3><Menu/></h3>
+      <Logo src="https://s3.amazonaws.com/gupy5/production/companies/2355/career/19612/images/2021-07-28_17-25_logo.png" alt="Logo" />
+      <NavbarLinks>
+        <NavbarLink>DRIVEN</NavbarLink>
+        <NavbarLink><MdDarkMode/></NavbarLink>
+        <NavbarLink><AiTwotoneHeart/></NavbarLink>
+        <NavbarLink><MdShoppingCart/></NavbarLink>
+      </NavbarLinks>
+      {/* <Button>Minha Conta</Button> */}
+    </NavbarContainer>
+    <ProductsContainer>
+        <StyledInput  type='text' placeholder="Digite o que você procura..." />
+        <SearchIcon/>
+    </ProductsContainer>
+    </>
+  );
+};
+
+export default Navbar;
