@@ -17,7 +17,9 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        background-color: ${black}
+        background-color: ${black};
+        box-sizing:border-box;
+        
     }
     button {
         outline: none;
