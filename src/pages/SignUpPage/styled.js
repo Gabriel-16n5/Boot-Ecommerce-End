@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { white, darkgray } from "../../constants/colors"
+import { white, darkgray, red } from "../../constants/colors"
 
 
 export const ContainerMain = styled.div`
@@ -69,4 +69,7 @@ color:${white};
 font-size:15px;
 font-weight:500;
 `
-
+export const User = styled.section`
+font-size:70px;
+color:${red};
+`
