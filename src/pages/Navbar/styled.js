@@ -4,11 +4,10 @@ import { FaSearch } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 
 export const NavbarContainer = styled.nav`
-  background-color: #fff;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
+width:100vw;
+display:flex;
+align-items:center;
+overflow:hidden;
 `;
 
 export const Logo = styled.img`
@@ -43,7 +42,13 @@ export const NavbarLink = styled.li`
 `;
 
 export const Button = styled.button`
+  display:flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
   background-color: #f7941d;
+  width: 60px;
+  height: 50px;
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -73,9 +78,9 @@ export const SearchIcon = styled(FaSearch)`
 `
 
 export const ProductsContainer = styled.div`
-    
+    width:100vw;
     display:flex;
-    flex-direction: row;
+    overflow:hidden;
     margin-bottom:15px;
     input{
         width:374px;

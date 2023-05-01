@@ -2,6 +2,8 @@ import styled from "styled-components"
 import {gray, green} from "../../constants/colors"
 export const CartContainer = styled.main`
 h1 {
+    width:90vw;
+    overflow:hidden;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -15,8 +17,9 @@ h1 {
 
 export const ResumeContainer = styled.section`
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width:100vw;
+    /* align-items: center;
+    justify-content: center; */
     flex-direction: column;
     margin-bottom: 20px;
     div {
@@ -35,8 +38,6 @@ export const ResumeContainer = styled.section`
         background-color: #424242;
     }
     p {
-        margin-left: 10px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -49,8 +50,6 @@ export const ResumeContainer = styled.section`
         background-color: #424242;
     }
     h3 {
-        margin-left: 10px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -63,8 +62,6 @@ export const ResumeContainer = styled.section`
         background-color: #424242;
     }
     h5 {
-        margin-left: 10px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -77,8 +74,6 @@ export const ResumeContainer = styled.section`
         background-color: #424242;
     }
     h4 {
-        margin-left: 10px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -99,8 +94,6 @@ export const ResumeContainer = styled.section`
     height: 30vw;
     }
     h2 {
-        margin-left: 10px;
-        margin-top: 15px;
         width: 90vw;
         height: 10vw;
         background-color: #424242;
@@ -116,7 +109,6 @@ export const ResumeContainer = styled.section`
         color: #FFFFFF;
     }
 button {
-    margin-bottom:20px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +122,6 @@ button {
     font-weight: 600;
     color: white;
     cursor: pointer;
-    margin-top: 40px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -142,14 +133,10 @@ button {
 export const CartProducts = styled.section`
     display: flex;
     flex-direction: column;
-    align-items: end;
-    padding-left: 300px;
     div {
         background-color: #424242;
     }
     p {
-        margin-left: 10px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -162,8 +149,6 @@ export const CartProducts = styled.section`
         background-color: #424242;
     }
     h3 {
-        margin-left: 10px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -176,8 +161,6 @@ export const CartProducts = styled.section`
         background-color: #424242;
     }
     h4 {
-        margin-left: 10px;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -219,7 +202,7 @@ export const CartProducts = styled.section`
     }
 button {
     margin-bottom:10px;
-    align-items: center;
+    margin-left: 65vw;
     justify-content: center;
     width: 30vw;
     height: 10vw;
@@ -257,7 +240,6 @@ export const FinalizeOrder = styled.section`
 `
 export const FinalizeOrderData = styled.section`
     display:flex;
-    padding-right: 10px;
     h5 {
     width: 90vw;
     background-color: #424242;
@@ -289,8 +271,6 @@ export const FinalizeOrderData = styled.section`
     background-color: #424242;
     width: 90vw;
     height: 35vw;
-    padding-left: 10px;
-    padding-right: 10px;
     }
     input {
     margin-top: 40px;

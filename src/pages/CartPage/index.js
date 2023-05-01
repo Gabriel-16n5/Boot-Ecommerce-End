@@ -101,7 +101,8 @@ export default function CartPage() {
   }
 
   const PageContainer = styled.main`
-  /* background-color:  "gray"; */
-  width: calc(100vw - 50px);
-  max-height: 100vh;
+width:100vw;
+/* display:flex; */
+/* align-items:center; */
+overflow:hidden;
 `
