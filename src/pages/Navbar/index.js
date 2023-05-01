@@ -1,5 +1,5 @@
 import React from "react";
-import {NavbarContainer, Logo, NavbarLinks, NavbarLink,ProductsContainer, StyledInput, SearchIcon, Menu} from "./styled"
+import {NavbarContainer, Logo, NavbarLinks, NavbarLink,ProductsContainer, StyledInput, Button, SearchIcon, Menu} from "./styled"
 import { AiTwotoneHeart } from "react-icons/ai";
 import {MdDarkMode, MdShoppingCart} from "react-icons/md"
 
@@ -15,7 +15,7 @@ const Navbar = () => {
         <NavbarLink><AiTwotoneHeart/></NavbarLink>
         <NavbarLink><MdShoppingCart/></NavbarLink>
       </NavbarLinks>
-      {/* <Button>Minha Conta</Button> */}
+      <Button>Minha Conta</Button>
     </NavbarContainer>
     <ProductsContainer>
         <StyledInput  type='text' placeholder="Digite o que você procura..." />

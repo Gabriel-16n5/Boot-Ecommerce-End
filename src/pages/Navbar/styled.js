@@ -7,7 +7,7 @@ export const NavbarContainer = styled.nav`
   background-color: #fff;
   padding: 1rem;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: start;
 `;
 
@@ -42,15 +42,15 @@ export const NavbarLink = styled.li`
   }
 `;
 
-// export const Button = styled.button`
-//   background-color: #f7941d;
-//   color: #fff;
-//   font-size: 1rem;
-//   padding: 0.5rem 1rem;
-//   border: none;
-//   border-radius: 0.25rem;
-//   cursor: pointer;
-// `;
+export const Button = styled.button`
+  background-color: #f7941d;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+`;
 
 
 
@@ -84,7 +84,5 @@ export const ProductsContainer = styled.div`
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         margin-bottom:15px;
-    }
-  
+    } 
 `
-
