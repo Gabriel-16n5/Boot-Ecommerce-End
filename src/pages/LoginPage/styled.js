@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { white, darkgray ,green} from "../../constants/colors"
+import { white, darkgray ,green, red} from "../../constants/colors"
 
 
 export const ContainerMain = styled.div`
@@ -54,10 +54,29 @@ input::placeholder{
 input{
     color:${white};
 }
+span{
+    width: calc(100% - 30px);
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    input{
+        margin-bottom:20px;
+    }
+    span{
+        width:20px;
+        height:20px;
+        font-size:20px;
+        position:absolute;
+        bottom:38px;
+        right:40px;
+    }
+} 
+
 div{
     width:90vw;
     display:flex;
     padding-left:15px;
+
     input{
         width:18px;
         height:18px;
@@ -78,3 +97,11 @@ font-weight:500;
 background-color:${green};
 `
 
+export const User = styled.section`
+font-size:70px;
+color:${red};
+`
+export const Newuser = styled.section`
+font-size:70px;
+color:${green};
+`

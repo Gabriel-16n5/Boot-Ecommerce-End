@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { ContainerMain, Divtop, Divmenu, Button } from "./styled"
+import { ContainerMain, Divtop, Divmenu, Button,User } from "./styled"
+import { HiUserAdd } from "react-icons/hi";
 import axios from 'axios'
 import Footer from "../Footer/index"
 import Navbar from "../Navbar/index"
@@ -34,6 +35,7 @@ export default function SignUpPage() {
                 <h1>SEUS DADOS</h1>
             </Divtop>
             <Divmenu>
+               <User><HiUserAdd /></User> 
                 <h2>Criar minha conta</h2>
                 <p>Informe seus dados abaixo para criar conta</p>
                 <form>
