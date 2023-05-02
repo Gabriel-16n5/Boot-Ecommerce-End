@@ -2,73 +2,82 @@ import styled from "styled-components"
 import cadeira_gamer from '../../Utils/images/cadeira_gamer_azul.jpg'
 import outdoor1 from '../../Utils/images/outdoor1.png'
 import { FaSearch } from "react-icons/fa";
+import CartPage from "../Navbar/index.js";
+import Footer from "../Footer/index.js";
 import React from "react"; 
+import { useNavigate } from "react-router-dom";
 
 export default function ProductsPage() {
+    const navigate = useNavigate();
+    
 
     return (
-        <ProductsPageContainer>
-            <PromoOutDoor>
-                            <img scr={outdoor1} alt="promoção das cadeiras-gamers"></img>
-            </PromoOutDoor>
-            <ProductsContainer>
-                <StyledInput  type='text' placeholder="Digite oque você procura..." />
-                <SearchIcon/>
-            </ProductsContainer>
-          
-            <RecommendedContainer>
+       <>   <CartPage/>
+            <ProductsPageContainer>
                 
-                <RecommProduct>
-                <img src={cadeira_gamer} alt="cadeira gamer azul"></img>
-                    <p>Cadeira Gamer Pichau Valhalla, Preto e Azul</p>
+              
+                <ProductsSearcherContainer>
+                    <StyledInput  type='text' placeholder="Digite oque você procura..." />
+                    <SearchIcon/>
+                </ProductsSearcherContainer>
+                <PromoOutDoor>
+                                <img scr={outdoor1} alt="promoção das cadeiras-gamers"></img>
+                </PromoOutDoor>
+                <RecommendedContainer>
                     
-                    <DivPrices>
-                    <div>
-                        <h1>à vista</h1>
-                        <h1 >R$1.899,00</h1>
-                    </div>
-                    <div>
-                        <h2>Preço</h2>
-                        <h2>R$2.249,00</h2>
-                    </div>
-                    </DivPrices>
-                   
-                   
+                    <RecommProduct onClick={()=>{navigate("/Cart")}}>
+                    <img src={cadeira_gamer} alt="cadeira gamer azul"></img>
+                        <p>Cadeira Gamer Pichau Valhalla, Preto e Azul</p>
+                        
+                        <DivPrices>
+                        <div>
+                            <h1>à vista</h1>
+                            <h1 >R$1.899,00</h1>
+                        </div>
+                        <div>
+                            <h2>Preço</h2>
+                            <h2>R$2.249,00</h2>
+                        </div>
+                        </DivPrices>
                     
-                </RecommProduct>
-                <RecommProduct>
-                <img src={cadeira_gamer} alt="cadeira gamer azul"></img>
-                    <p>Cadeira Gamer Pichau Valhalla, Preto e Azul</p>
-                    <DivPrices>
-                    <div>
-                        <h1>à vista</h1>
-                        <h1 >R$1.899,00</h1>
-                    </div>
-                    <div>
-                        <h2>Preço</h2>
-                        <h2>R$2.249,00</h2>
-                    </div>
-                    </DivPrices>
                     
-                </RecommProduct>
-                <RecommProduct>
-                <img src={cadeira_gamer} alt="cadeira gamer azul"></img>
-                    <p>Cadeira Gamer Pichau Valhalla, Preto e Azul</p>
-                    <DivPrices>
-                    <div>
-                        <h1>à vista</h1>
-                        <h1 >R$1.899,00</h1>
-                    </div>
-                    <div>
-                        <h2>Preço</h2>
-                        <h2>R$2.249,00</h2>
-                    </div>
-                    </DivPrices>  
-                </RecommProduct>
-            </RecommendedContainer>
-            
-        </ProductsPageContainer>
-
+                        
+                    </RecommProduct>
+                    <RecommProduct onClick={()=>{navigate("/Cart")}}>
+                    <img src={cadeira_gamer} alt="cadeira gamer azul"></img>
+                        <p>Cadeira Gamer Pichau Valhalla, Preto e Azul</p>
+                        <DivPrices>
+                        <div>
+                            <h1>à vista</h1>
+                            <h1 >R$1.899,00</h1>
+                        </div>
+                        <div>
+                            <h2>Preço</h2>
+                            <h2>R$2.249,00</h2>
+                        </div>
+                        </DivPrices>
+                        
+                    </RecommProduct>
+                    <RecommProduct onClick={()=>{navigate("/Cart")}}> 
+                    <img src={cadeira_gamer} alt="cadeira gamer azul"></img>
+                        <p>Cadeira Gamer Pichau Valhalla, Preto e Azul</p>
+                        <DivPrices>
+                        <div>
+                            <h1>à vista</h1>
+                            <h1 >R$1.899,00</h1>
+                        </div>
+                        <div>
+                            <h2>Preço</h2>
+                            <h2>R$2.249,00</h2>
+                        </div>
+                        </DivPrices>  
+                    </RecommProduct>
+                </RecommendedContainer>
+                
+            </ProductsPageContainer>
+            <Footer/>
+       </>
+    
     )
 
 }
@@ -102,10 +111,10 @@ const SearchIcon = styled(FaSearch)`
   position: relative;
   top: 20px;
   left: -30px;
-  //transform: translateY(-50%);
+  transform: translateY(-50%);
 `
 
-const ProductsContainer = styled.div`
+const ProductsSearcherContainer = styled.div`
     
     display:flex;
     flex-direction: row;
