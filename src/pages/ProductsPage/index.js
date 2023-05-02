@@ -11,9 +11,7 @@ export default function ProductsPage() {
     return (
         <ProductsPageContainer>
             <Navbar/>
-            <PromoOutDoor>
-                            <img scr={outdoor1} alt="promoção das cadeiras-gamers"></img>
-            </PromoOutDoor>
+        
             <ProductsContainer>
                 <StyledInput  type='text' placeholder="Digite oque você procura..." />
                 <SearchIcon/>
@@ -103,9 +101,10 @@ const StyledInput= styled.input`
 `
 const SearchIcon = styled(FaSearch)`
   position: relative;
-  top: 20px;
+  top: 25px;
   left: -30px;
-  //transform: translateY(-50%);
+  transform: translateY(-50%);
+  background:none;
 `
 
 const ProductsContainer = styled.div`

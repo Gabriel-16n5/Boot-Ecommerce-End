@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 26px;
         color: ${blue};
     }
-    input {
+   /* input {
         font-size: 20px;
         width: calc(100% - 30px);
         border-radius: 5px;
@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
             border: 2px solid #ffb6b6;
             margin: 0px;
         }
-    }
+    } */
     form {
         display: flex;
         flex-direction: column;
