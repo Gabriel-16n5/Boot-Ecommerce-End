@@ -2,12 +2,15 @@ import styled from "styled-components"
 import cadeira_gamer from '../../Utils/images/cadeira_gamer_azul.jpg'
 import outdoor1 from '../../Utils/images/outdoor1.png'
 import { FaSearch } from "react-icons/fa";
-import React from "react"; 
+import React from "react";
+import Footer from "../Footer/index"
+import Navbar from "../Navbar/index"
 
 export default function ProductsPage() {
 
     return (
         <ProductsPageContainer>
+            <Navbar/>
             <PromoOutDoor>
                             <img scr={outdoor1} alt="promoção das cadeiras-gamers"></img>
             </PromoOutDoor>
@@ -66,7 +69,7 @@ export default function ProductsPage() {
                     </DivPrices>  
                 </RecommProduct>
             </RecommendedContainer>
-            
+            <Footer/>
         </ProductsPageContainer>
 
     )

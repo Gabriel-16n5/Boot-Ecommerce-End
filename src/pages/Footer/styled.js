@@ -6,6 +6,9 @@ export const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  div {
+    margin-right: 20px;
+  }
 `;
 
 export const SectionTitle = styled.h4`

@@ -1,4 +1,4 @@
-import { CartContainer, CartProducts, FinalizeOrder, FinalizeOrderData, ResumeContainer } from "./styled";
+import {ProductsContainer, StyledInput, SearchIcon, CartContainer, CartProducts, FinalizeOrder, FinalizeOrderData, ResumeContainer, Prices } from "./styled";
 import Forms from "../../hooks/Forms"
 import styled from "styled-components"
 import Footer from "../Footer/index"
@@ -14,6 +14,10 @@ export default function CartPage() {
     return (
     <PageContainer>
         <Navbar/>
+        <ProductsContainer>
+            <StyledInput  type='text' placeholder="Digite o que você procura..." />
+            <SearchIcon/>
+        </ProductsContainer>
       <CartContainer>
         <h1>MEU CARRINHO</h1>
         <ResumeContainer>
@@ -35,7 +39,7 @@ export default function CartPage() {
                     <h3>no PIX com 15% desconto</h3>
                     <h2>-</h2>
                     <h1>R$82,24</h1>
-                    <h3>em até 6x de<h1>13,71</h1> sem juros no cartão</h3>
+                    <Prices><h3>em até 6x de</h3><h1>13,71</h1><h3>sem juros no cartão</h3></Prices>
                 </div>
             </div>
         </ResumeContainer>

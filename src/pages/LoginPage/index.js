@@ -2,6 +2,8 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ContainerMain, Divtop, Divmenu, Button,Register } from "./styled"
 import axios from "axios";
+import NavBar from "../Navbar/index"
+import Footer from "../Footer/index";
 
 export default function LoginPage() {
     const navigate = useNavigate();
@@ -26,6 +28,7 @@ export default function LoginPage() {
     }
     return (
         <ContainerMain>
+            <NavBar/>
         <Divtop>
             <h1>CARRINHO</h1>
             <h1>Barra de progresso</h1>
@@ -53,6 +56,7 @@ export default function LoginPage() {
         <p>Criar uma conta é fácil! Informe seus dados e uma senha para aproveitar todos os beneficios de ter uma conta.</p>
         <Register onClick={e => navigate("/register")}>CADASTRE-SE</Register>
         </Divmenu>
+        <Footer/>
     </ContainerMain>
     )
 }

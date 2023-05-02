@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import {gray, green} from "../../constants/colors"
+import { FaSearch } from "react-icons/fa";
+
 export const CartContainer = styled.main`
 h1 {
     width:90vw;
@@ -14,14 +16,60 @@ h1 {
     color: #FFFFFF;
 }
 `
+export const StyledInput= styled.input`
+
+        width:374px;
+        height:53px;
+        background: #ededed;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        margin-bottom:15px;
+
+`
+export const SearchIcon = styled(FaSearch)`
+  position: relative;
+  top: 20px;
+  left: -30px;
+  //transform: translateY(-50%);
+`
+
+export const ProductsContainer = styled.div`
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+    margin-bottom:15px;
+    input{
+        width:374px;
+        height:53px;
+        background: #ededed;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        margin-bottom:15px;
+    } 
+`
+
+export const ContainerPage = styled.div`
+width:100vw;
+display:flex;
+flex-direction:column;
+align-items:center;
+overflow:hidden;
+`
+export const Prices = styled.div`
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+`
 
 export const ResumeContainer = styled.section`
     display: flex;
     width:100vw;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-top: 10px;
     div {
         background-color: #424242;
     }
@@ -50,7 +98,7 @@ export const ResumeContainer = styled.section`
         background-color: #424242;
     }
     h3 {
-        display: flex;
+        display:flex;
         justify-content: center;
         text-align: center;
         font-family: 'Roboto';
@@ -94,6 +142,7 @@ export const ResumeContainer = styled.section`
     height: 30vw;
     }
     h2 {
+        margin-top: 10px;
         width: 90vw;
         height: 10vw;
         background-color: #424242;
@@ -133,6 +182,9 @@ button {
 export const CartProducts = styled.section`
     display: flex;
     flex-direction: column;
+    width:100vw;
+    align-items: center;
+    justify-content: center;
     div {
         background-color: #424242;
     }

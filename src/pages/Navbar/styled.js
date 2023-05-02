@@ -1,6 +1,4 @@
 import styled from "styled-components";
-
-import { FaSearch } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 
 export const NavbarContainer = styled.nav`
@@ -8,6 +6,7 @@ width:100vw;
 display:flex;
 align-items:center;
 overflow:hidden;
+justify-content: space-between;
 `;
 
 export const Logo = styled.img`
@@ -57,37 +56,10 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-
-
-
-export const StyledInput= styled.input`
-
-        width:374px;
-        height:53px;
-        background: #ededed;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        margin-bottom:15px;
-
-`
-export const SearchIcon = styled(FaSearch)`
-  position: relative;
-  top: 20px;
-  left: -30px;
-  //transform: translateY(-50%);
-`
-
-export const ProductsContainer = styled.div`
-    width:100vw;
-    display:flex;
-    overflow:hidden;
-    margin-bottom:15px;
-    input{
-        width:374px;
-        height:53px;
-        background: #ededed;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        margin-bottom:15px;
-    } 
+export const ContainerPage = styled.div`
+width:100vw;
+display:flex;
+flex-direction:column;
+align-items:center;
+overflow:hidden;
 `
