@@ -19,7 +19,7 @@ export default function CartPage() {
             <SearchIcon/>
         </ProductsContainer>
       <CartContainer>
-        <h1>MEU CARRINHO</h1>
+        <h1>Meu Carrinho</h1>
         <ResumeContainer>
             <div>
                 <><h2>Resumo</h2></>
