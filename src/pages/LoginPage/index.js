@@ -14,7 +14,7 @@ export default function LoginPage() {
     
     function register(e) {
         e.preventDefault();
-        const url = "http://localhost:5000"
+        const url = process.env.REACT_APP_API_URL;
         const promessa = axios.post(`${url}/signIn`,data);
         
         promessa.then((res) => {

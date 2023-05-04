@@ -20,7 +20,7 @@ export default function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<SignUpPage />} />
             <Route path="/" element={<ProductsPage />} />
-            <Route path="/Cart" element={<CartPage/>} />
+            <Route path="/cart" element={<CartPage/>} />
           </Routes>
         </BrowserRouter>
       </AuthContext.Provider>

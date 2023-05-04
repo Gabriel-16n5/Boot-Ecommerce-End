@@ -82,8 +82,6 @@ const ProductsPageContainer = styled.div`
     background-color:#424242;
     min-width:100%;
     top:10px;
-
-
 `
 const StyledInput= styled.input`
         width:374px;
