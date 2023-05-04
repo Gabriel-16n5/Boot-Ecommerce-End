@@ -11,10 +11,10 @@ export default function SignUpPage() {
     const [data, setData] = useState({ name: "", email: "", password: "" })
     const [confirm, setConfirm] = useState("")
     function register(e) {
-        const url = process.env.REACT_APP_API_URL
+        const URL = process.env.REACT_APP_API_URL
         e.preventDefault();
         if (data.password !== confirm) return alert("As senhas devem ser iguais")
-        const promessa = axios.post(`${url}/signUp`, data);
+        const promessa = axios.post(`${URL}/signup`, data);
 
         promessa.then(() => {
             alert("Usuário cadastrado com sucesso!");

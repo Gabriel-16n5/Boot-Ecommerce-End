@@ -14,8 +14,8 @@ export default function LoginPage() {
     
     function register(e) {
         e.preventDefault();
-        const url = process.env.REACT_APP_API_URL;
-        const promessa = axios.post(`${url}/signIn`,data);
+        const URL = process.env.REACT_APP_API_URL;
+        const promessa = axios.post(`${URL}/signin`,data);
         
         promessa.then((res) => {
             alert("Login efetuado com sucesso!");
