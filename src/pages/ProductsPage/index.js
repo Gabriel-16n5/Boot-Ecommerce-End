@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import cadeira_gamer from '../../Utils/images/cadeira_gamer_azul.jpg'
-import outdoor1 from '../../Utils/images/outdoor1.png'
 import { FaSearch } from "react-icons/fa";
 import React from "react";
 import Footer from "../Footer/index"
@@ -11,9 +10,8 @@ export default function ProductsPage() {
     return (
         <ProductsPageContainer>
             <Navbar/>
-        
             <ProductsContainer>
-                <StyledInput  type='text' placeholder="Digite oque você procura..." />
+                <StyledInput  type='text' placeholder="Digite o que você procura..." />
                 <SearchIcon/>
             </ProductsContainer>
           
@@ -83,14 +81,11 @@ const ProductsPageContainer = styled.div`
     box-sizing:border-box;
     background-color:#424242;
     min-width:100%;
-    margin-top:1px; // ta com essa margem por causa da navBar que vai entrar ai 
-    position: relative;
     top:10px;
 
 
 `
 const StyledInput= styled.input`
-
         width:374px;
         height:53px;
         background: #ededed;
@@ -111,7 +106,8 @@ const ProductsContainer = styled.div`
     
     display:flex;
     flex-direction: row;
-    margin-bottom:15px;
+    margin-top:15px;
+    background-color: #424242;
     input{  
         width:374px;
         height:53px;
